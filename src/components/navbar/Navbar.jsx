@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.svg';
 import './navbar.css';
 
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
     <div className='gpt__navbar'>
       <div className='gpt__navbar-links'>
@@ -17,6 +19,16 @@ const Navbar = () => {
           <p><a href="#features">Case Studies</a></p>
           <p><a href="#blog">Library</a></p>
         </div>
+      </div>
+      <div className="gpt__navbar-sign">
+        <p>Sign In</p>
+        <button type="button">Sign Up</button>
+      </div>
+      <div className="gpt__navbar-menu">
+        {toggleMenu
+          ? <RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(false)} />
+          : <RiMenu3Line color='#fff' size={27} onClick={() => setToggleMenu(false)} />
+        }
       </div>
     </div>
   )
