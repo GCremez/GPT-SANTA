@@ -42,7 +42,7 @@ const Navbar = () => {
               <div className="gpt__navbar-menu_container-links-sign">
                 <p>Sign In</p>
                 <button type="button">Sign Up</button>
-              </div>
+               </div>
             </div>
           </div>
         )
