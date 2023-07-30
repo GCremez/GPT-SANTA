@@ -106,7 +106,7 @@
     .gpt__navbar-menu {
         display: flex;
     }
-}
+} 
 
 @media screen and (max-width: 700px) {
     .gpt__navbar {
@@ -118,7 +118,7 @@
     .gpt__navbar {
         padding: 2rem;
     }
-
+ 
     .gpt__navbar-sign {
         display: none;
     }

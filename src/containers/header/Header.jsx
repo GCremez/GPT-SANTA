@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className='gpt__header section__padding' id='home'>
       <div className="gpt__header-content">
-        <hi className="gradient__text">let's Build something amazing with GPT-3 OpenAI</hi>
+        <h1 className="gradient__text">let's Build something amazing with GPT-3 OpenAI</h1>
         <p>Yet bed any for travelling assitance inbulgence unpleasing. 
           Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterious the attachment. 
           Party we years to order allow asked of.
@@ -23,9 +23,9 @@ const Header = () => {
           <p>1600 people requested access a visit in last 24 hours</p>
         </div>
 
-        <div className="gpt__header-image">
-          <img src={ai} alt="ai" />
-        </div>
+      </div>
+      <div className="gpt__header-image">
+        <img src={ai} alt="ai" />
       </div>
     </div>
   )

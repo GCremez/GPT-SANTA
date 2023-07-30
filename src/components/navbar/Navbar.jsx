@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className='gpt__navbar-links_logo'>
           <img src={logo} alt="logo" />
         </div>
-        <div className='gpt__navbar-links_container'>
+        <div className="gpt__navbar-links_container" >
           <Menu />
         </div>
       </div>
@@ -33,10 +33,10 @@ const Navbar = () => {
       <div className="gpt__navbar-menu">
         {toggleMenu
           ? <RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color='#fff' size={27} onClick={() => setToggleMenu(false)} />
+          : <RiMenu3Line color='#fff' size={27} onClick={() => setToggleMenu(true)} />
         }
         {toggleMenu && (
-          <div className="gpt__narbar-menu_container .scale-up-center">
+          <div className="gpt__navbar-menu_container scale-up-center">
             <div className="gpt__navbar-menu_container-links">
               <Menu/> 
               <div className="gpt__navbar-menu_container-links-sign">
